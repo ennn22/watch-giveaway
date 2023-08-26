@@ -1,0 +1,97 @@
+:root {
+  --bg-color-1: #151B30;
+  --bg-color-2: #1E7178;
+  --bg-color-3: #0F0E2B;
+  --bg-color-4: #FE526A;
+  --font-color-1: #F6F7F4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(45deg, var(--bg-color-1), #174553, var(--bg-color-2));
+  background-repeat: no-repeat;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  color: var(--font-color-1);
+}
+
+.container {
+  height: 40vh;
+  width: 50vw;
+  margin: 200px auto;
+  position: relative;
+  background: rgba(241, 251, 244, 0.1) 
+}
+
+.header,
+.prize h2,
+.countdown-wrapper h3 {
+  text-transform: uppercase;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  color: var(--bg-color-4);
+  background-color: black;
+  padding: 20px 90px;
+  display: inline-block;
+  margin-top: -50%;
+  font-weight: 600;
+  box-shadow: 0px 3px 25px rgba(0,0,0,0.6);
+}
+
+.prize h1 {
+  text-transform: uppercase;
+}
+
+.prize h1,
+.prize h3 {
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+.prize {
+  padding: 20px;
+}
+
+.countdown-wrapper h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.countdown-wrapper {
+  padding: 0 20px;
+}
+
+.countdown ul {
+  list-style: none;
+}
+
+.watch img {
+  width: 50%;
+  position: absolute;
+  top: 0px;
+  right: -50px;
+}
+
+.register-btn button {
+  text-transform: capitalize;
+  background-color: var(--bg-color-4);
+  color: var(--font-color-1);
+  font-size: 32px;
+  padding: 20px 30px;
+  border-style: none;
+  box-shadow: 0px 3px 25px rgba(0,0,0,0.6);
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 60px;
+  cursor: pointer;
+}
