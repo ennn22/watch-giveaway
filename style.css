@@ -95,3 +95,32 @@ body {
   margin-top: 60px;
   cursor: pointer;
 }
+
+.countdown {
+  max-width: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  text-transform: uppercase;
+  align-items: center;
+  background-color: rgba(0,0,0,0.2);
+  padding: 15px;
+}
+
+#hours,
+#minutes,
+#seconds {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+}
+
+#hours > p,
+#minutes > p,
+#seconds > p {
+  padding: 5px;
+  background: black;
+  font-size: 24px;
+  font-weight: bold;
+}
