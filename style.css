@@ -24,7 +24,6 @@ body {
   height: 40vh;
   width: 50vw;
   margin: 200px auto;
-  position: relative;
   background: rgba(241, 251, 244, 0.1);
 }
 
@@ -42,8 +41,8 @@ body {
 }
 
 .watch img {
-  width: 70%;
-  min-width: 300px;
+  width: 300px;
+  min-width: 100px;
 }
 
 .header,
@@ -135,4 +134,40 @@ body {
   background: black;
   font-size: 24px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90vw;
+  }
+
+  .watch img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .content {
+    width: 70%;
+  }
+  
+  .watch {
+    width: 30%;
+  }
+  
+  .watch img {
+    width: 150px;
+    min-width: 100px;
+  }
+
+  .container {
+    height: 60vh;
+    width: 80vw;
+    margin: 100px auto;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
 }
